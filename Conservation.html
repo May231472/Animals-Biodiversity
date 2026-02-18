@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Conservation - Animals & Biodiversity</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  /* ===== BODY ===== */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d8c9a3; /* Beige */
+    color: #333;
+  }
+ 
+  /* ===== HEADER ===== */
+  .header {
+    background-color: #006400; /* Dark green */
+    color: #f0e68c; /* Gold */
+    padding: 25px 80px;
+    font-size: 40px;
+    font-weight: bold;
+  }
+ 
+  /* ===== NAVIGATION ===== */
+  nav {
+    background-color: #006400;
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+ 
+  nav a {
+    color: #f0e68c;
+    text-decoration: none;
+    margin-right: 70px;
+    font-size: 18px;
+  }
+ 
+  nav a:hover {
+    border-bottom: 2px solid #f0e68c;
+  }
+ 
+  /* ===== HERO ===== */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+  }
+ 
+  .hero h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+  }
+ 
+  .hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #3c3c3c;
+  }
+ 
+  /* ===== CONTAINER & GRID ===== */
+  .container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+  }
+ 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+ 
+  /* ===== CARD ===== */
+  .card {
+    position: relative;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+  }
+ 
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+ 
+  /* Overlay */
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+  }
+ 
+  /* CARD CONTENT */
+  .card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    z-index: 2;
+  }
+ 
+  .card-content h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+  }
+ 
+  .card-content p {
+    margin: 0;
+    font-size: 16px;
+  }
+ 
+  /* BADGE */
+  .badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #f0e68c;
+    color: #006400;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+  }
+
+ 
+  /* Responsive */
+  @media (max-width: 960px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    nav a {
+      margin-right: 30px;
+    }
+  }
+ 
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+ 
+    .footer-top {
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+ 
+    .footer-right span {
+      margin-left: 15px;
+    }
+  }
+  /* FOOTER */
+.footer {
+    padding: 40px 0 30px;
+    background-color: rgb(19, 86, 20);
+    color: aliceblue;
+    margin: 0;
+}
+.container-fluidC footer{
+    width: 100%;
+    background-color: rgb(66, 122, 67);
+    display: flex;
+    overflow: hidden;
+}
+.containerC {
+    width: 100%;
+    padding: 0;
+    
+}
+.row.clearfixC {
+    display: flex;
+    justify-content: space-between;
+}
+.FooterColC {
+    width: 33.33%;
+    padding: 0 10px;
+}
+#logo {
+    width: 50px;
+    padding-left: 20px;
+}
+#infoHub {
+    font-size: 120%;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-left: 5px solid white;
+    padding-left: 20px;
+}
+.FooterColC a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.fa {
+    padding: 15px 7px;
+    font-size: 32px;
+    width: 35px;
+    height: 29px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.footer {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0 !important;
+}
+.card3 {
+    width: 99.5vw;
+    height: 550px;
+    margin: 0 calc(50% - 50vw);
+    background-image: url("https://i.pinimg.com/1200x/bf/2c/4c/bf2c4c5be8e1ace220777ee3ac418993.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+</style>
+</head>
+
+<body>
+ 
+  <!-- HEADER -->
+  <div class="header">Animals & Biodiversity</div>
+ 
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="Wildlife.html">Wildlife</a>
+    <a href="Habitats.html">Habitats</a>
+    <a href="Conservation.html">Conservation</a>
+    <a href="Contact_Us.html">Contact Us</a>
+</nav>
+ <div class="card3"></div>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Wildlife Conservation</h1>
+    <p>
+      Protecting animals helps maintain biodiversity and keeps ecosystems healthy and balanced.
+    </p>
+  </section>
+ 
+  <!-- CONTENT -->
+  <div class="container">
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/1f/80/5f/1f805f2842bc47363266d1710aca9b54.jpg">
+        <span class="badge">Why Protect?</span>
+        <div class="card-content">
+          <h3>Importance of Protecting Animals</h3>
+          <p>
+            Animals play vital roles in ecosystems. Protecting wildlife ensures biodiversity and environmental balance
+            for future generations.
+          </p>
+        </div>
+      </div>
+ 
+      <div class="card">
+        <img src="https://i.pinimg.com/1200x/cd/5c/e6/cd5ce61b5bf3b86d97fbcf55d363a555.jpg">
+        <span class="badge">Threats</span>
+        <div class="card-content">
+          <h3>Problems Animals Face</h3>
+          <p>
+            Habitat loss, pollution, climate change, and poaching threaten many species around the world.
+          </p>
+        </div>
+      </div>
+ 
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/29/0d/4e/290d4e160e87c18a19a1e3cee25b2e1f.jpg">
+        <span class="badge">Take Action</span>
+        <div class="card-content">
+          <h3>Easy Ways to Help Nature</h3>
+          <p>
+            Reduce waste, recycle, conserve water, and support wildlife organizations to help protect biodiversity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+ 
+  <!-- FOOTER -->
+ <footer>
+<div class="container-fluidC footer">
+    <div class="containerC">
+        <div class="row clearfixC">
+
+            <div class="FooterColC">
+                <img src="" id="logo" alt="">
+                <span id="infoHub"></span>
+            </div>
+            <div class="FooterColC">
+                <p>About</p>
+                <ul>
+                    <li>Topic: Animals & Biodiversity</li>
+                    <li>Room no: Room-2</li>
+                    <li>Members: Myo Myat, Pan Myat, May Kar</li>
+                </ul>
+            </div>
+            <div class="FooterColC">
+                <a href="https://www.youtube.com/@edusn89" class=" fa fa-youtube fa-youtube"></a>
+                <a href="" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/@wdusn89" class="fa fa-twitter"></a>
+            </div>
+        </div>
+        
+        <hr>
+    <p style="text-align: center;">&copy; Year-7 Sangria (Room-3). All right reserved.</p>
+    </div>
+</div>
+</footer>
+</body>
+</html>
+ 

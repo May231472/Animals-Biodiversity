@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitats</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(242, 227, 187);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+        /* HEADER  */
+/* ===== HEADER (DARK GREEN) ===== */
+.header {
+    background-color: #006400;  
+    color: #f0e68c;           
+    padding: 25px 80px;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* ===== NAVIGATION BAR ===== */
+nav {
+    background-color: #006400;  
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+}
+nav a {
+    color: #f0e68c;   
+    text-decoration: none;
+    margin-right: 80px;
+    font-size: 20px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+#bacttoTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+.containerA {
+    width: 85%;
+    margin: 0 auto;
+}
+.box-containerA {
+    overflow: auto;
+    width: 25%;
+    height: 200px;
+    background-color: antiquewhite;
+    margin-right: 30px;
+}
+.title-box {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: rgb(234, 212, 132);
+    margin: 25px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+/* BODY */  
+ .containerB {
+    width: 85%;
+    margin: auto;
+}   
+
+.container-fluidB {
+    width: 100%;
+    background-color: rgb(66, 122, 67);
+    display: flex;
+    border-radius: 18px;
+    overflow: hidden;
+}
+main {
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.row.B {
+    flex-direction: row-reverse;
+}
+.column1,.column2 {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.hero img {
+    width: 100%;
+}
+.column1 img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.column2 a {
+    background-color: rgb(24, 136, 80);
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    display: inline-block;
+    border-radius: 6px;
+}
+.card3 {
+    width: 99.5vw;
+    height: 550px;
+    margin: 0 calc(50% - 50vw);
+    background-image: url("https://i.pinimg.com/1200x/5d/30/a3/5d30a33d05dde9e04e90127a05d4bbb0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.section-title {
+    background: #f4f9f9;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2c7b33;
+    padding-left: 10px;
+}
+.habitat-grid {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card {
+    min-width: 180px;
+    background: rgb(242, 220, 148);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: darkolivegreen 0px 5px 15px;
+}
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 6px;
+}
+.card h3 {
+    margin-bottom: 8px;
+    color: #2c7b41;
+}
+/* FOOTER */
+.footer {
+    padding: 40px 0 30px;
+    background-color: rgb(19, 86, 20);
+    color: aliceblue;
+    margin: 0;
+}
+.container-fluidC footer{
+    width: 100%;
+    background-color: rgb(66, 122, 67);
+    display: flex;
+    overflow: hidden;
+}
+.containerC {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.FooterColC {
+    width: 33.33%;
+    float: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#logo {
+    width: 50px;
+    padding-left: 20px;
+}
+#infoHub {
+    font-size: 120%;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-left: 5px solid white;
+    padding-left: 20px;
+}
+.FooterColC a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.fa {
+    padding: 15px 7px;
+    font-size: 32px;
+    width: 35px;
+    height: 29px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.footer {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0 !important;
+}
+    </style>
+    </head>
+    <body>
+<header>
+        <!-- HEADER -->
+<div class="header">
+    Animals & Biodiversity
+</div>
+ 
+<!-- NAVIGATION -->
+<nav>
+    <a href="Home.html">Home</a>
+    <a href="Wildlife.html">Wildlife</a>
+    <a href="Habitats.html">Habitats</a>
+    <a href="Conservation.html">Conservation</a>
+    <a href="Contact_Us.html">Contact Us</a>
+</nav>
+
+ <div class="card3"></div>
+</header>
+     <main class="container">
+    <section class="intro">
+        </div>
+      <h1 class="title-box">Why Habitats Are Important</h1>
+      <h3>
+        Habitats are important because they provide animals and plants with everything they need to survive, 
+        such as food, water, and shelter. Each habitat has special conditions that help different living animals 
+        grow and stay healthy. When habitats are protected, animals can live safely and continue their life cycles. 
+        Habitats also help keep nature balanced by supporting food chains and controlling the climate. If habitats are 
+        destroyed, many animals would lose their homes and become endangered. That's why, protecting habitats is 
+        important for the survival of wildlife and for the future of our planet.
+      </h3>
+      <br>
+    </section>
+    <section id="habitats">
+  <h2 class="title-box">Habitats</h2>
+  <div class="habitat-grid">
+    <!-- Forest -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/df/5a/7b/df5a7b2c815ce01ca7993cd7f7964243.jpg" alt="Forest">
+      <div class="card-content">
+        <h3>Forest</h3>
+        <p>Forests are full of trees and plants. They provide shelter and food for many animals.</p>
+      </div>
+    </div>
+    <!-- Ocean -->
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/d7/39/ce/d739ce12044bea21c49a0d7e024217d6.jpg" alt="Ocean">
+      <div class="card-content">
+        <h3>Ocean</h3>
+        <p>Oceans cover most of the Earth. They are home to many sea creatures.</p>
+      </div>
+    </div>
+    <!-- Desert -->
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/99/dd/97/99dd976904abd2e62660e87afeacbddf.jpg" alt="Desert">
+      <div class="card-content">
+        <h3>Desert</h3>
+        <p>Deserts are very dry and hot. Animals here save water to survive.</p>
+      </div>
+    </div>
+    <!-- Grassland -->
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/0f/88/30/0f88303202d2b45d42b49d704f624c0e.jpg" alt="Grassland">
+      <div class="card-content">
+        <h3>Grassland</h3>
+        <p>Grasslands have wide open spaces with grass and few trees.</p>
+      </div>
+    </div>
+
+    <!-- Polar habitats -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/f2/70/f4/f270f4cb4677ece22b2931e3eed5045b.jpg" alt="Grassland">
+      <div class="card-content">
+        <h3>Polar habitat</h3>
+        <p>Polar regions are very cold and covered with ice. Animals there have thick fur or fat to stay warm.</p>
+      </div>
+    </div>
+
+    <!-- Mountain -->
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/d6/37/dc/d637dc9c75fbb3f7ba6b2b1f94d8bd39.jpg" alt="Forest">
+      <div class="card-content">
+        <h3>Mountain</h3>
+        <p>FMountains are high and cold land areas. Animals here are strong climbers.</p>
+      </div>
+    </div>
+
+    <!-- Wetland -->
+    <div class="card">
+      <img src="https://i.pinimg.com/1200x/b6/77/7a/b6777a79228e1a6059ac4382574352c1.jpg" alt="Forest">
+      <div class="card-content">
+        <h3>Wetlands</h3>
+        <p>Wetlands are areas with a lot of water and soft land. They are home to frogs, birds, and fish.</p>
+      </div>
+    </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    </div>
+    <div class="container-fluidB">
+                <div class="column1">
+                    <img src="https://i.pinimg.com/1200x/74/25/f3/7425f3ddd20895408980d18cc4e123f1.jpg" alt="">
+                </div>
+                <div class="column2">
+                    <h1>Forest</h1>
+            <ul>
+                <li>Forests are covered with many tall trees and thick plants.</li>
+                <li>They usually have good rainfall and rich soil.</li>
+                <li>The ground is often cool and wet.</li>
+                <li>Animals can hide and build homes there.</li>
+                <li>Many insects and birds live in forests.</li>
+                <li>Examples: monkeys, tigers, parrots, frogs, butterflies, and ect.</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br>
+    <div class="container-fluidB">
+            <div class="row B">
+                <div class="column1">
+                    <img src="https://i.pinimg.com/736x/9c/48/27/9c4827e69063a4a8b0749d603e81626b.jpg" alt="">
+                </div>
+                <div class="column2">
+                    <h1>Ocean</h1>
+            <ul>
+                <li>Oceans are large areas of salt water.</li>
+                <li>They cover about 70% of Earth's surface.</li>
+                <li>Some parts are shallow, while others are very deep.</li>
+                <li>Sunlight only reaches the top layer.</li>
+                <li>Water temperature changes from warm to very cold.</li>
+                <li>Many aquatic animals breathe under the water using gills.</li>
+                <li>But some animals come up for air.</li>
+                <li>Examples: fish, dolphins, whales, turtles, sharks, and ect.</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br><br>
+    <div class="container-fluidB">
+                <div class="column1">
+                    <img src="https://i.pinimg.com/1200x/3a/b1/a3/3ab1a30ae4ba2285bc72db359f9de83c.jpg" alt="">
+                </div>
+                <div class="column2">
+                    <h1>Desert</h1>
+            <ul>
+                <li>Deserts are very hot and dry.</li>
+                <li>There is very little rain.</li>
+                <li>The land is sandy or rocky.</li>
+                <li>There are few plants, mostly cactus and bushes.</li>
+                <li>Water is hard to find.</li>
+                <li>Many animals prefer to come out at night.</li>
+                <li>Examples: camels, lizards, snakes, scorpions, and ect.</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+        <div class="container-fluidB">
+            <div class="row B">
+                <div class="column1">
+                    <img src="https://i.pinimg.com/736x/a8/1d/b6/a81db6367c37c18e4ca4db1ec8499eb8.jpg" alt="">
+                </div>
+                <div class="column2">
+                    <h1>Grassland</h1>
+            <ul>
+                <li>Grasslands are wide open areas with tall grass.</li>
+                <li> There are few trees.</li>
+                <li>Fires can sometimes happen naturally.</li>
+                <li>Many animals live in groups.</li>
+                <li>Predators hunt in open spaces.</li>
+                <li>Examples: lions, zebras, giraffes, elephants, grasshoppers, and ect.</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluidB">
+                <div class="column1">
+                    <img src="https://i.pinimg.com/1200x/48/a7/e7/48a7e73042e3d550e88b39f78e3fa3e5.jpg" alt="">
+                </div>
+                <div class="column2">
+                    <h1>Polar habitat</h1>
+            <ul>
+                <li>Polar habitats are near the North and South Poles.</li>
+                <li>They are covered with snow and ice.</li>
+                <li>Temperatures are extremely cold.</li>
+                <li>There is little plant life.</li>
+                <li>Some months have long daylight, others long darkness.</li>
+                <li>Animals have thick fur or fat.</li>
+                <li>They can survive in freezing weather.</li>
+                <li>Examples: polar bears, penguins, seals, Arctic foxes, and ect.</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-fluidB">
+            <div class="row B">
+                <div class="column1">
+                    <img src="https://i.pinimg.com/736x/69/dd/31/69dd315cea9bf9df0f1abd051910e599.jpg" alt="">
+                </div>
+                <div class="column2">
+                    <h1>Mountain</h1>
+            <ul>
+                <li>Mountains are very high land areas with steep slopes.</li>
+                <li>SThe air is thin and cold, especially at the top.</li>
+                <li>Weather changes quickly and it often snows.</li>
+                <li>Lower parts may have forests, while higher parts have rocks and ice.</li>
+                <li>Plants are small and strong because of wind and cold.</li>
+                <li>Animals have to be good climbers.</li>
+                <li>Examples: mountain goats, snow leopards, eagles, yaks, and ect.</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+     <div class="container-fluidB">
+                <div class="column1">
+                    <img src="https://i.pinimg.com/736x/a5/b1/1c/a5b11c178867c6d2038d43f7ed88dbff.jpg" alt="">
+                </div>
+                <div class="column2">
+                    <h1>Wetlands</h1>
+            <ul>
+                <li>Wetlands are places where land is covered with water.</li>
+                <li>The land is often muddy or flooded.</li>
+                <li>Plants grow in shallow water.</li>
+                <li>Many birds and frogs live here.</li>
+                <li>They help clean water naturally.</li>
+                <li>Examples: frogs, ducks, fish, insects, turtles, and ect.</li>
+            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</main>
+    <br><br>
+    <footer>
+<!--Footer -->
+<div class="container-fluidC footer">
+    <div class="containerC">
+        <div class="row clearfix">
+
+            <div class="FooterColC">
+                <img src="" id="logo" alt="">
+                <span id="infoHub"></span>
+            </div>
+            <div class="FooterColC">
+                <p>About</p>
+                <ul>
+                    <li>Topic: Animals & Biodiversity</li>
+                    <li>Room no: Room-2</li>
+                    <li>Members: Myo Myat, Pan Myat, May Kar</li>
+                </ul>
+            </div>
+            <div class="FooterColC">
+                <a href="https://www.youtube.com/@edusn89" class=" fa fa-youtube fa-youtube"></a>
+                <a href="" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/@wdusn89" class="fa fa-twitter"></a>
+            </div>
+        </div>
+        
+        <hr>
+    <p style="text-align: center;">&copy; Year-7 Sangria (Room-3). All right reserved.</p>
+    </div>
+</div>
+</footer>
+</body>
+</html>

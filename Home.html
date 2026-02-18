@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animals & Biodiversity - Home</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ 
+/* ===== BODY BACKGROUND ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d8c9a3;   /* Light beige background */
+}
+ 
+/* ===== HEADER (DARK GREEN) ===== */
+.header {
+    background-color: #006400;  /* Dark green */
+    color: #f0e68c;             /* Light yellow/gold text */
+    padding: 25px 80px;
+    font-size: 40px;
+    font-weight: bold;
+}
+ 
+/* ===== NAVIGATION BAR ===== */
+nav {
+    background-color: #006400;  /* Same dark green */
+    padding: 20px 80px;
+    position: sticky;
+    top: 0;
+}
+ 
+nav a {
+    color: #f0e68c;   /* Light yellow text */
+    text-decoration: none;
+    margin-right: 80px;
+    font-size: 20px;
+}
+ 
+nav a:hover {
+    text-decoration: underline;
+}
+
+.card3 {
+    width: 99.5vw;
+    height: 550px;
+    margin: 0 calc(50% - 50vw);
+
+    background-image: url("https://i.pinimg.com/1200x/d5/59/79/d55979d29aee604e72d57e62360c9c51.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #d8c9a3;
+}
+ 
+.hero h1 {
+    font-size: 36px;
+    color: #000;
+}
+ 
+.hero p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+ 
+/* ===== GRID SECTION ===== */
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 40px 0;
+}
+ 
+/* COLUMN GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+ 
+/* CARD DESIGN */
+.card {
+    background-color: #e8e2d6;   /* Light cream card */
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;   /* For absolute positioning inside */
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+ 
+/* ABSOLUTE BADGE */
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    background-color: #006400;
+    color: #f0e68c;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+ 
+/* =========================
+   FOOTER SECTION
+========================= */
+.footer {
+    padding: 40px 0 30px;
+    background-color: rgb(19, 86, 20);
+    color: aliceblue;
+    margin: 0;
+}
+.container-fluidC footer{
+    width: 100%;
+    background-color: rgb(66, 122, 67);
+    display: flex;
+    overflow: hidden;
+}
+.containerC {
+    width: 100%;
+    padding: 0;
+    
+}
+.row.clearfixC {
+    display: flex;
+    justify-content: space-between;
+}
+.FooterColC {
+    width: 33.33%;
+    padding: 0 10px;
+}
+#logo {
+    width: 50px;
+    padding-left: 20px;
+}
+#infoHub {
+    font-size: 120%;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-left: 5px solid white;
+    padding-left: 20px;
+}
+.FooterColC a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+.fa {
+    padding: 15px 7px;
+    font-size: 32px;
+    width: 35px;
+    height: 29px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.footer {
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0 !important;
+}
+ 
+</style>
+</head>
+<body>
+ 
+<!-- HEADER -->
+<div class="header">
+    Animals & Biodiversity
+</div>
+ 
+<!-- NAVIGATION -->
+<nav>
+    <a href="Home.html">Home</a>
+    <a href="Wildlife.html">Wildlife</a>
+    <a href="Habitats.html">Habitats</a>
+    <a href="Conservation.html">Conservation</a>
+    <a href="Contact_Us.html">Contact Us</a>
+</nav>
+
+ <div class="card3"></div>
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <h1>Welcome to Our Nature World</h1>
+    <p>
+        Animals are an essential part of our planet’s ecosystems. Biodiversity refers to the variety
+        of living species on Earth, including animals, plants, and microorganisms, that maintain
+        balance in nature.
+    </p>
+    <p><strong>This website is about exploring animals and understanding the importance of biodiversity.</strong></p>
+</section>
+ 
+<!-- GRID BODY SECTION -->
+<div class="container">
+    <div class="grid">
+ 
+        <div class="card">
+            <div class="badge">Wildlife</div>
+            <h3>Mammals</h3>
+            <p>Mammals are warm-blooded animals that give birth to live young and play vital roles in ecosystems.</p>
+        </div>
+ 
+        <div class="card">
+            <div class="badge">Habitats</div>
+            <h3>Forests</h3>
+            <p>Forests support diverse species and help regulate climate and oxygen production worldwide.</p>
+        </div>
+ 
+        <div class="card">
+            <div class="badge">Conservation</div>
+            <h3>Protection</h3>
+            <p>Conservation efforts aim to protect endangered species and preserve biodiversity for future generations.</p>
+        </div>
+ 
+    </div>
+</div>
+ 
+<!-- FOOTER -->
+ <footer>
+<div class="container-fluidC footer">
+    <div class="containerC">
+        <div class="row clearfixC">
+
+            <div class="FooterColC">
+                <img src="" id="logo" alt="">
+                <span id="infoHub"></span>
+            </div>
+            <div class="FooterColC">
+                <p>About</p>
+                <ul>
+                    <li>Topic: Animals & Biodiversity</li>
+                    <li>Room no: Room-2</li>
+                    <li>Members: Myo Myat, Pan Myat, May Kar</li>
+                </ul>
+            </div>
+            <div class="FooterColC">
+                <a href="https://www.youtube.com/@edusn89" class=" fa fa-youtube fa-youtube"></a>
+                <a href="" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/@wdusn89" class="fa fa-twitter"></a>
+            </div>
+        </div>
+        
+        <hr>
+    <p style="text-align: center;">&copy; Year-7 Sangria (Room-3). All right reserved.</p>
+    </div>
+</div>
+</footer>
+ 
+</body>
+</html>
+ 
